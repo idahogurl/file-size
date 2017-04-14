@@ -11,13 +11,13 @@ function submitForm()
     }
 
     var data = new FormData(document.getElementById("fileForm"));
-    var postUrl = "http://file-size-mb.herokuapp.com/file_size/";
+    var postUrl = "https://file-size-mb.herokuapp.com/file_size/";
     axios.post(postUrl, data)
     .then(
         function(result)
         {
             resultArea.className = "alert alert-success";
-            resultArea.innerHTML = "Your file is " + (result.data.size / 100).toFixed(1) + " MB";
+            resultArea.innerHTML = "Your file is " + (result.data.size / 100000).toFixed(1) + " MB";
         },
         function(error)
         {

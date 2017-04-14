@@ -1,6 +1,7 @@
 var express = require('express');
 var multer  = require('multer');
-var upload = multer({ dest: 'uploads/' });
+var storage = multer.memoryStorage();
+var upload = multer({ storage: storage, limits: { fileSize: 200000 }});
 var path = require("path");
  
 var app = express();
