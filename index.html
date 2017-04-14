@@ -4,17 +4,18 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
         <link href="styles.css" rel="stylesheet"/>
-        <script>
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.js"></script>
+        <script src="index.js"></script>
     </head>
     <body>
         <div class="well">
-        <i class="fa fa-file fa-4x" aria-hidden="true"></i> <h2>File Size Calculator</h2>
+        <i class="fa fa-file fa-4x" aria-hidden="true"></i><h2>File Size Calculator</h2>
         <h5>Submit a file to view its filesize.</h5>
-        <form enctype="multipart/form-data" class="form-inline">
-            <input type="file" class="form-control" name="testFile"/>
+        <form enctype="multipart/form-data" class="form-inline" method="POST" id="fileForm" onsubmit="return submitForm()">
+            <input type="file" class="form-control" id="file" name="file"/>
             <button type="submit" class="btn btn-danger" id="submit">Submit</button>
         </form>
+        <div class="alert" id="result"></div>
         </div>
     </body>
 </html>

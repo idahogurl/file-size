@@ -14,3 +14,13 @@ body
 #submit {
     margin: 20px;
 }
+
+.alert
+{
+    display: none;
+}
+
+.alert-danger, .alert-success
+{
+    display: block;
+}
