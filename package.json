@@ -1,0 +1,23 @@
+{
+  "name": "file-size",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://idahogurl@github.com/idahogurl/file-size.git"
+  },
+  "author": "Rebecca Vest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idahogurl/file-size/issues"
+  },
+  "homepage": "https://github.com/idahogurl/file-size#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "multer": "^1.3.0"
+  }
+}

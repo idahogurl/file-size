@@ -1,0 +1,16 @@
+body
+{
+    font-family: 'Roboto';
+    margin: 20px;
+    background-color: salmon;
+}
+.well {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#submit {
+    margin: 20px;
+}
