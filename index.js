@@ -11,7 +11,7 @@ function submitForm()
     }
 
     var data = new FormData(document.getElementById("fileForm"));
-    var postUrl = "http://0.0.0.0:3000/file_size/";
+    var postUrl = "http://file-size-mb.herokuapp.com/file_size/";
     axios.post(postUrl, data)
     .then(
         function(result)
